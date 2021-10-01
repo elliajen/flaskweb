@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>메인페이지</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <title>메인 페이지</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <nav>
-        <a href="{{url_for('main')}}">Home | </a>
-        <a href="{{url_for('memberlist')}}">회원목록 | </a>
-        <a href="{{url_for('register')}}">회원가입 </a>
-    </nav>
-    <h2>안녕하세요 회원관리 사이트입니다.</h2>
+    <div id="container">
+        {%  include 'navbar.html'  %}
+        <!--외부 파일 포함, 가져오기-->
+        <section>
+            <h2>안녕하세요~ 회원 관리 사이트입니다.</h2>
+            <img src="{{ url_for('static', filename='img/bg5.jpg') }}" id="pic">
+            <p id = "demo"></p>
+        </section>
+    </div>
+    <script src="{{url_for('static', filename='js/main_js.js')}}">
 </body>
 </html>
