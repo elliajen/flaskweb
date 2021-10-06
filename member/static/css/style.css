@@ -1,5 +1,5 @@
 /* main 스타일 */
-*{margin: 0; padding: 0}   /*여백 초기화*/
+*{margin: 0; padding: 0;}   /*여백 초기화*/
 #container{width: 1000px; margin: 0 auto;}
 header{height: 100px;}
 nav ul{list-style: none; text-align: right; margin-right: 150px; padding-top: 25px;}
@@ -17,7 +17,7 @@ section img{margin-bottom: 10px;}
 .join ul li label{width: 120px; float: left; text-align: right}
 .join ul li input[type="text"], input[type="date"]{width: 250px; height: 30px;}
 .join ul li input[type="password"]{width: 250px; height: 30px;}
-.join ul li input[type="submit"], input[type="reset"]{width: 70px; height: 30px;  margin: 5px;}
+.join ul li input[type="button"], input[type="reset"]{width: 70px; height: 30px;  margin: 5px;}
 
 /*login 스타일 */
 .login{width: 450px; margin: 0 auto;}
